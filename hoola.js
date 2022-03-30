@@ -1,1 +1,2 @@
-var casa = 'hola'
+var casa = 'hola';
+console.log();
