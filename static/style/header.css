@@ -1,5 +1,5 @@
 header {
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -9,39 +9,49 @@ header {
 
 .left {
   display: flex;
-  width: 500px;
+  width: 600px;
+
+}
+
+.contenedor-icon {
+  display: flex;
+  align-items: center;
 }
 
 .contenedor-icon .icon-image {
-  width: 30px;
+  width: 38px;
+
 }
 
 img.icon_leter_one {
-  height: 20px;
+  height: 25px;
   width: 50px;
 }
 
 img.icon_leter_two {
-  height: 20px;
+  height: 25px;
   width: 50px;
   padding-right: 15px;
 }
+
 .buscador-input,
 .contenedor-buscador {
   background: #f5f5f5;
 }
 
 .contenedor-buscador {
-  width: 270px;
+  width: 420px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 10px 0;
 }
 
 .buscador-input {
   border: none;
   color: #a2a2a2;
+  width: 300px;
 }
 
 .buscador-input:focus {
@@ -57,6 +67,7 @@ img.icon_leter_two {
   height: 15px;
   cursor: pointer;
 }
+
 .button-login {
   padding: 5% 40px;
   border: solid 1px #2a7ae4;
@@ -68,7 +79,7 @@ img.icon_leter_two {
 
 /*  celulares */
 @media (max-width: 700px) {
- 
+
 
   .buscador-input {
     display: none;
@@ -84,10 +95,11 @@ img.icon_leter_two {
     width: 20%;
   }
 
-  .contenedor-icon{
+  .contenedor-icon {
     display: flex;
     justify-content: flex-end;
   }
+
   .burcador-lupa {
     height: 20px;
   }
@@ -99,5 +111,4 @@ img.icon_leter_two {
 
 /* tablet */
 
-@media (min-width: 700px) and (max-width: 910px) {
-}
+@media (min-width: 700px) and (max-width: 910px) {}

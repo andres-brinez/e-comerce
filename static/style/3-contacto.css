@@ -1,0 +1,149 @@
+.section-contact {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Raleway';
+    background-color: #EAF2FD;
+    padding: 50px 5%;
+}
+
+
+
+img.icon-image-contact {
+    height: 30px;
+}
+
+img.icon_leter_one-contact,
+img.icon_leter_two-contact {
+    height: 25px;
+}
+
+.links,
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* border: solid 1px red; */
+
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    width: 45%;
+    color: #A2A2A2;
+}
+
+.form-titulo {
+    color: #464646;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.contenedor-input-name {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+
+.contenedor-input-name label {
+    font-size: 15px;
+}
+
+.input-name {
+    margin-top: 5px;
+    color: #464646;
+    font-size: 18px;
+}
+
+.input-name::placeholder {
+    color: #464646;
+}
+
+
+
+.input-name,
+textarea {
+    border: none;
+    padding-left: 0;
+
+
+
+}
+
+.input-name,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    padding-left: 10px;
+    padding-top: 16px;
+    color: #464646;
+    margin-bottom: 15px;
+}
+
+.caja-tablet {
+    display: none;
+}
+
+.input-button {
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    background-color: #2A7AE4;
+    border: none;
+    color: #fff;
+}
+
+
+/*  celulares */
+@media (max-width: 850px) {
+    .section-contact {
+
+        flex-direction: column;
+
+    }
+
+    .contact-img,
+    .links {
+
+        margin: 20px auto;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+
+    .form {
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .input-button {
+
+        height: 40px;
+
+    }
+
+
+}
+

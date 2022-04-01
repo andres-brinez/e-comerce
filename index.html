@@ -1,81 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>e-commerce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./static/style/predeterminados/normalize.css" />
-    <link rel="stylesheet" href="./static/style/predeterminados/reset.css" />
-    <link
-      rel="stylesheet"
-      href="./static/style/style.cssfont-family: 'Raleway', sans-serif;"
-    />
-    <link rel="stylesheet" href="./static/style/header.css" />
-    <link rel="stylesheet" href="./static/style/1-hero.css" />
-  </head>
-  <body>
-    <header>
-      <div class="left">
-        <div class="contenedor-icon">
-          <h1>
-            <img
-              class="icon-image"
-              src="./static/img/header/icon.svg"
-              alt="icono video juego"
-            />
-            <img
-              class="icon_leter_one"
-              src="./static/img/header/Alura.svg"
-              alt="icono alura"
-            />
-            <img
-              class="icon_leter_two"
-              src="./static/img/header/Geek.svg"
-              alt="icono geek"
-            />
-          </h1>
-        </div>
-        <div class="contenedor-buscador">
-          <input
-            type="text"
-            class="buscador-input"
-            placeholder="¿Qué deseas buscar?"
-          />
-          <img
-            src="./static/img/header/lupa.svg"
-            alt="lupa"
-            class="burcador-lupa"
-          />
-        </div>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/static/img/header/icon.svg" type="image/x-icon">
+  <title>e-commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/style/predeterminados/normalize.css" />
+  <link rel="stylesheet" href="./static/style/predeterminados/reset.css" />
+  <link rel="stylesheet" href="./static/style/style.cssfont-family: 'Raleway', sans-serif;" />
+  <link rel="stylesheet" href="./static/style/header.css" />
+  <link rel="stylesheet" href="./static/style/1-hero.css" />
+  <link rel="stylesheet" href="./static/style/2-products.css" />
+  <link rel="stylesheet" href="./static/style/3-contacto.css" />
+  <link rel="stylesheet" href="/static/style/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <div class="contenedor-icon">
+        <h1>
+          <img class="icon-image" src="./static/img/header/icon.svg" alt="icono video juego" />
+          <img class="icon_leter_one" src="./static/img/header/Alura.svg" alt="icono alura" />
+          <img class="icon_leter_two" src="./static/img/header/Geek.svg" alt="icono geek" />
+        </h1>
       </div>
-      <div class="right">
-        <a href="" class="button-login">Login</a>
+      <div class="contenedor-buscador">
+        <input type="text" class="buscador-input" placeholder="¿Qué deseas buscar?" />
+        <img src="./static/img/header/lupa.svg" alt="lupa" class="burcador-lupa" />
       </div>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div class="hero-img desktop">
-          <img src="/static/img/section-hero/Hero-movil.svg" alt="imagen hero">
+    </div>
+    <div class="right">
+      <a href="" class="button-login">Login</a>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero-img desktop">
+        <img src="/static/img/section-hero/Hero.svg" alt="imagen hero" />
+      </div>
+
+      <div class="hero-img movil tablet">
+        <img src="./static/img/section-hero/Hero-movil.svg" alt="imagen hero" />
+      </div>
+      <div class="hero-informacion">
+        <h2 class="titulo-hero">Febrero Promocional</h2>
+        <p class="parrafo_hero">
+          Productos selecionados con 33% de descuento
+        </p>
+        <a href="" class="button-hero"> Ver Consolas</a>
+      </div>
+    </section>
+
+    <section class="section-products">
+      <article class="article-type-product">
+        <div class="descripcion">
+          <h2 class="title-type-product">Star Wars</h2>
+          <div class="see-all">
+            <a href="">ver todo</a><img src="/static/img/section-products/flecha.svg" alt="flecha" class="flecha" />
+          </div>
         </div>
 
-        <div class="hero-img movil tablet">
-          <img src="./static/img/section-1-hero/Hero-movil.svg" alt="imagen hero">
+        <div class="contenedor-produtos">
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/uno.svg" alt="tasa start-wars" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/dos.svg" alt="tasa start-wars" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/tres.svg" alt="" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/cuatro.svg" alt="" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/cinco.svg" alt="" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/start-wars/seis.svg" alt="" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 60,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
         </div>
-        <div class="hero-informacion">
-          <h2 class="titulo-hero">Febrero Promocional</h2>
-          <p class="parrafo_hero">
-            Productos selecionados con 33% de descuento
-          </p>
-          <a href="" class="button-hero"> Ver Consolas</a>
+      </article>
+      <article class="article-type-product">
+        <div class="descripcion">
+          <h2 class="title-type-product">Consolas</h2>
+          <div class="see-all">
+            <a href="">ver todo</a><img src="/static/img/section-products/flecha.svg" alt="flecha"
+              class="flecha" /></a><img src="" alt="" class="flecha" />
+          </div>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="contenedor-produtos">
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/uno.svg" alt="consola" class="img-product" />
+            <p class="name-product">Control XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/dos.svg" alt="consola" class="img-product" />
+            <p class="name-product">Control y consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/tres.svg" alt="consola" class="img-product" />
+            <p class="name-product">Consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/cuatro.svg" alt="consola" class="img-product" />
+            <p class="name-product">Consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/cinco.svg" alt="consola" class="img-product" />
+            <p class="name-product">Consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/consolas/seis.svg" alt="" class="img-product" />
+            <p class="name-product">Game Boy Color</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+        </div>
+      </article>
+      <article class="article-type-product">
+        <div class="descripcion">
+          <h2 class="title-type-product">Diversos</h2>
+          <div class="see-all">
+            <a href="">ver todo</a><img src="/static/img/section-products/flecha.svg" alt="flecha"
+              class="flecha" /></a><img src="" alt="" class="flecha" />
+          </div>
+        </div>
+        <div class="contenedor-produtos">
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/uno.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Camisa Atari</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/dos.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Camisa SNES</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/tres.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Control y consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/cuatro.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Control y consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/cinco.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Control y consola XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+          <div class="contenedor-producto">
+            <img src="/static/img/section-products/diversos/seis.svg" alt="diverso" class="img-product" />
+            <p class="name-product">Producto XYZ</p>
+            <p class="price-product">$ 50,00</p>
+            <a href="" class="see-product">Ver producto</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="section-contact">
+
+
+      <div class="contact-img">
+        <img class="icon-image-contact" src="./static/img/header/icon.svg" alt="icono video juego" />
+        <img class="icon_leter_one-contact" src="./static/img/header/Alura.svg" alt="icono alura" />
+        <img class="icon_leter_two-contact" src="./static/img/header/Geek.svg" alt="icono geek" />
+      </div>
+
+      <div class="links">
+        <a href="#">Quienes somos</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Programa de fidelidad</a>
+        <a href="#">Nuestras Tiendas</a>
+        <a href="#">Quiero ser franquiciado</a>
+        <a href="#">Anúncie aquí</a>
+      </div>
+
+      <div class="form">
+        <h2 class="form-titulo">Hable con nosotros</h2>
+        <div class="contenedor-input-name">
+          <label for="input-name">Nombre</label>
+          <input type="text" id="input-name" class="input-name" placeholder="Briñez">
+        </div>
+        <textarea cols="30" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        <button class="input-button" type="submit">Enviar mensaje</button>
+      </div>
+
+    </div>
+
+
+
+    <footer id="footer">
+      <p class="contenido">Desarrollado por Andres Briñez</p>
+      <p class="año">2022</p>
+    </footer>
+
+  </main>
+</body>
+
 </html>

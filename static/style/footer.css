@@ -1,0 +1,37 @@
+
+footer{
+    /* border: solid 1px red; */
+    font-family: 'Raleway';
+    margin: 30px auto;
+    text-align: center;
+   
+   
+    
+}
+
+
+.año,p.contenido{
+    
+    color: #464646;
+    font-size: 25px;
+
+}
+
+p.contenido{
+    
+    padding-bottom: 10px;
+    
+}
+
+
+@media(max-width: 400px){
+
+    p.contenido,p.año {
+        
+        font-size: 16px;
+        
+        
+    }
+   
+}
+
