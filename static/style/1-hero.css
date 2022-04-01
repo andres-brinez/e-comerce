@@ -81,16 +81,6 @@
 /* tablet */
 
 @media (min-width: 700px) and (max-width: 910px) {
-  .hero-img.desktop {
-    display: none;
-
-  }
-
-  .hero-img.movil {
-
-    display: flex;
-    width: 100%;
-  }
 
   .hero-informacion {
 
