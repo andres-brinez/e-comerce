@@ -5,9 +5,6 @@
 
 }
 
-.hero-img.movil {
-  display: none;
-}
 
 .hero-img img {
   width: 100%;
@@ -55,14 +52,9 @@
 
 /*  celulares */
 @media (max-width: 700px) {
-  .hero-img.movil {
-    display: flex;
-    width: 100%;
-  }
+ 
 
-  .hero-img.desktop {
-    display: none;
-  }
+ 
 
   .hero-informacion {
     margin-left: 5%;
