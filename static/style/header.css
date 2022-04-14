@@ -80,24 +80,41 @@ img.icon_leter_two {
 /*  celulares */
 @media (max-width: 700px) {
 
+ 
+  .contenedor-icon .icon-image {
+    width: 28px;
+  
+  }
+  
+  img.icon_leter_two {
+    
+    padding-right: 25px;
+  
+  }
+  
 
   .buscador-input {
     display: none;
   }
 
   .left {
-    width: 55%;
-    /* order: 2; */
+    width: 65%;
+   
+    
+   
   }
 
   .contenedor-buscador {
     background: #fff;
     width: 20%;
+   
+ 
   }
 
   .contenedor-icon {
     display: flex;
     justify-content: flex-end;
+    
   }
 
   .burcador-lupa {
