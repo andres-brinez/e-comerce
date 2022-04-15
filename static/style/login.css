@@ -1,0 +1,46 @@
+.main-login{
+    background-color: #f5f5f5;
+}
+.login{
+    
+    width: 30%;
+    margin: auto;
+    padding: 180px ;
+    font-family: "Raleway", sans-serif;
+   
+}
+
+.login h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #464646;
+    font-size: 25px;
+    font-weight: 700;
+}
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-login input{
+    padding: 20px  30px;
+    border: none;
+    color: #464646;
+    margin-bottom: 20px;
+    /* border-radius: 6px; */
+    border-bottom: 2px #C8C8C8 solid;
+}
+
+.formulario-login input:focus{
+    outline: none;
+}
+
+.formulario-login button {
+    background-color:#2A7AE4;
+    border: none;
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
