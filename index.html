@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./static/style/predeterminados/reset.css" />
   <link rel="stylesheet" href="./static/style/header.css" />
   <link rel="stylesheet" href="./static/style/1-hero.css" />
+  <link rel="stylesheet" href="./static/style/login.css" />
   <link rel="stylesheet" href="./static/style/2-products.css" />
   <link rel="stylesheet" href="./static/style/3-contacto.css" />
   <link rel="stylesheet" href="./static/style/footer.css">
@@ -26,7 +27,12 @@
     <div class="left">
       <div class="contenedor-icon">
         <h1>
-          <img class="icon-image" src="./static/img/header/icon.svg" alt="icono video juego" />
+          <a href="./index.html"
+          ><img
+            class="icon-image"
+            src="./static/img/header/icon.svg"
+            alt="icono video juego"
+        /></a>
           <img class="icon_leter_one" src="./static/img/header/Alura.svg" alt="icono alura" />
           <img class="icon_leter_two" src="./static/img/header/Geek.svg" alt="icono geek" />
         </h1>
@@ -37,7 +43,7 @@
       </div>
     </div>
     <div class="right">
-      <a href="./producto.html" class="button-login">Login</a>
+      <a href="./login.html" class="button-login">Login</a>
     </div>
   </header>
   <main>
@@ -50,7 +56,7 @@
         <p class="parrafo_hero">
           Productos selecionados con 33% de descuento
         </p>
-        <a href="./producto.html" class="button-hero"> Ver Consolas</a>
+        <a href="#consolas" class="button-hero"> Ver Consolas</a>
       </div>
     </section>
 
@@ -102,7 +108,7 @@
           </div>
         </div>
       </article>
-      <article class="article-type-product">
+      <article id="consolas" class="article-type-product">
         <div class="descripcion">
           <h2 class="title-type-product">Consolas</h2>
           <div class="see-all">
