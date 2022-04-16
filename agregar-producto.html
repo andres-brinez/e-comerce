@@ -79,18 +79,21 @@
         <h2>Agregar nuevo producto</h2>
         <div class="opcion-agregar-producto">
           <div class="container-arrastrar-imagen">
-            <img src="/static/img/agregar-producto/icono-img.svg" alt="">
-            <p class="container-arrastrar-imagen-texto">Arrastre para agregar una imagen para el producto</p>
+            <!-- cambia la  imagen  dependiendo del tamaño de  pantalla -->
             <picture>
-              <source media="(min-width:1300px)" srcset="./imgs/large.jpg" />
-              <source media="(min-width:1000px)" srcset="./imgs/medium.jpg" />
-             
-            </picture>
-        
+              <source media="(max-width:600px)" srcset="./static/img/agregar-producto/icono-mas.svg" />
+              <source media="(min-width:601px)" srcset="./static/img/agregar-producto/icono-img.svg" />  
+              <img src="./static/img/agregar-producto/icono-mas.svg" alt=""> 
+            </picture>  
+           
+            <p class="container-arrastrar-imagen-texto">Arrastre para agregar una imagen para el producto</p>
+            <p class="container-arrastrar-imagen-texto-movil">Agregar una imagen para el producto</p>
+            
           </div>
           
           <p id="o">o</p>
-          <button id="buscar-computador" >Busque en su computador</button>
+          <button id="button-buscar" >Busque en su computador</button>
+          <button id="button-buscar-tablet" >Busque en su dispositivo </button>
         </div>
         <form  >
           <div class="contenedor-input-name-product">
