@@ -25,8 +25,6 @@ button.addEventListener('click', () => {
 
     }
 
-
-
     else if (input_mensaje.value.length > 120) {
 
         Swal.fire({
