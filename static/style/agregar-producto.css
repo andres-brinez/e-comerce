@@ -128,7 +128,11 @@ input[type='file'] {
     color: #A2A2A2;
     font-size: 15px;
 }
-
+.contenedor-input-name-product label,
+.contenedor-input-price-product label {
+    color: #A2A2A2;
+    font-size: 15px;
+}
 
 textarea {
     width: 97%;

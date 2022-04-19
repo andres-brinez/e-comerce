@@ -81,14 +81,14 @@
 
       <form>
         <div class="contenedor-input-name-product">
-          <label for="input-name-product">Nombre del producto</label>
+          <label for="input-name">Nombre del producto</label>
           <input type="text" id="input-name" class="input-name" placeholder="Producto XYZ" />
         </div>
         <div class="contenedor-input-price-product">
-          <label for="input-price-product">Precio del produtco</label>
-          <input type="text" id="input-name" class="input-name" placeholder="$ 60,00" />
+          <label for="input-price">Precio del produtco</label>
+          <input type="text" id="input-price" class="input-name" placeholder="$ 60,00" />
         </div>
-        <textarea cols="30" rows="4" placeholder="Descripción del producto"></textarea>
+        <textarea  class="descripcion-producto" cols="30" rows="4" placeholder="Descripción del producto"></textarea>
         <button class="button-agregar-producto" type="file">
           Agregar producto
         </button>
@@ -129,7 +129,8 @@
   <script src="./js/validar-form-contact.js"></script>
   <script type="module" src="./js/agregar-productos.js/validar-button-img.js"></script>
   <script type="module" src="./js/agregar-productos.js/validar-arrastrar-imagen.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/validar-form-agregar-producto.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- importar  codigo alert  -->
 </body>
 
 </html>
