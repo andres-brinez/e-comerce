@@ -7,18 +7,11 @@ export function validarFile(file) {
 
     //si la  imagen esta dentro de las extenciones permitidas
     if (validExtents.includes(doctype)) {
-        //muestra mensaje
+        console.log('archivo permitido ')
+        //muestra eliminar  las  opciones de agregar la  imagen
         const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
         opciones_agregar_archivo.style.display = 'none';
-        const texto_exitoso = `
-            <div class='file-container'>
-                    <span>imagen subida  correctamente </span>
-                    
-            </div>
-            `
-        const mensaje = document.querySelector('#estado-imagen');
-        mensaje.innerHTML = texto_exitoso;
-        mensaje.classList.add('mensaje-activo')
+
 
         //muestra imagen    
         var arch = new FileReader(); /* FileReader es un objeto con el único porpósito de mostrar_imagen datos desde objetos de tipo Blo */
