@@ -1,5 +1,16 @@
+
+
 .main-agregar-producto {
     background-color: #f5f5f5;
+}
+/* estilos para mostrar imagens desde js */
+
+.opcion-agregar-producto.oculto{
+    display: none;
+}
+
+.mostrar{
+    display:flex;
 }
 
 .main-agregar-producto .container {

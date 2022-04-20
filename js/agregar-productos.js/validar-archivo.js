@@ -7,10 +7,12 @@ export function validarFile(file) {
 
     //si la  imagen esta dentro de las extenciones permitidas
     if (validExtents.includes(doctype)) {
-        console.log('archivo permitido ')
+        
         //muestra eliminar  las  opciones de agregar la  imagen
         const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
-        opciones_agregar_archivo.style.display = 'none';
+       
+        opciones_agregar_archivo.classList.add('oculto')  
+       
 
 
         //muestra imagen    

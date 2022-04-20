@@ -6,7 +6,8 @@ button_agregar.addEventListener('click', (evento) => {
     const input_name = document.querySelector('#input-name');
     const input_price = document.querySelector('#input-price');
     const descripcion_product = document.querySelector('.descripcion-producto');
-    const estado_imagen = document.querySelector('#estado-imagen');
+    const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
+    const contenedor = document.querySelector('.contenedor-imagen');
 
 
     if (input_name.value === '' || input_price.value === '' || descripcion_product.value === '') {
@@ -17,9 +18,9 @@ button_agregar.addEventListener('click', (evento) => {
             text: 'Campo vacio ',
         })
     }
-   
-    else if (input_name.value.length >20) {
-        console.log(input_name.value)
+
+    else if (input_name.value.length > 20) {
+
         Swal.fire({
             icon: 'error',
             title: 'Oops...Error',
@@ -39,7 +40,7 @@ button_agregar.addEventListener('click', (evento) => {
 
     }
 
-    else if (estado_imagen.className == '') {
+    else if (contenedor.childNodes.length!=2) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...Error',
@@ -59,11 +60,15 @@ button_agregar.addEventListener('click', (evento) => {
         input_price.value = '';
         descripcion_product.value = '';
 
+        //eliminar  imagen
+        contenedor.childNodes[0].remove()
+        //eliminar  la el texto
+        contenedor.childNodes[0].remove()
+
+
         //muestra la opcion de agregar imagen
-        const contenedor = document.querySelector('#estado-imagen');
-        contenedor.style.display = 'none';
-        const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
-        opciones_agregar_archivo.style.display = 'flex';
+        opciones_agregar_archivo.classList.add('mostrar')
+        opciones_agregar_archivo.classList.remove('oculto')
 
     }
 

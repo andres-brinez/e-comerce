@@ -1,10 +1,10 @@
 import { eliminar_imagen} from "./eliminar-imagen.js";
 
 export function mostrar_imagen(ev) {
-    console.log('mostrar imagen');
+    
     const contenedor = document.querySelector('.contenedor-imagen');
     contenedor.classList.remove('ocultar')
-    console.log(contenedor.className)
+   
 
     const caja_imagen = document.createElement('div');
     contenedor.appendChild(caja_imagen);
@@ -18,12 +18,16 @@ export function mostrar_imagen(ev) {
     parrafo.classList.add('box-parrafo');
     parrafo.innerText = 'da doble  click sobre la  imagen para eliminarla';
     parrafo.style.margin='0 0 10px 0'
-    console.log('entro mostrar img ')
+
+    const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
+    opciones_agregar_archivo.classList.remove('mostrar')
+    opciones_agregar_archivo.classList.add('oculto')
+  
 
     // dblclick es dar doble click
     caja_imagen.addEventListener('dblclick', () => {
         eliminar_imagen( caja_imagen,parrafo)     
-        console.log('entro eliminar ')
+        
 
     })
 
