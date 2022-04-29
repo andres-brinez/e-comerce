@@ -11,8 +11,12 @@ campo_filtrar.addEventListener("input", () => {
         for (let i = 0; i < productos.length; i++) {
             let producto = productos[i];
             let nombre_producto = producto.querySelector(".title-type-product").textContent
+            //i no diferencia entre mayusculas y  minusculas
+            let regex = new RegExp(campo_filtrar.value,"i")
 
-            if (nombre_producto != campo_filtrar.value) {
+            //revisa  si la letra que se  ingresa esta en el nombre, si esta devuelve true 
+            if (!regex.test(nombre_producto)) {
+                console.log(regex.test(nombre_producto))
                 producto.classList.add("invisible")
             }
 
