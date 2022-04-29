@@ -10,8 +10,5 @@ export function eliminar_imagen(caja_imagen, parrafo) {
     contenedor.childNodes[0].remove()
     //eliminar  la el texto
     contenedor.childNodes[0].remove()
+
 }
-
-
-
-

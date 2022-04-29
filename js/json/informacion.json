@@ -1,0 +1,14 @@
+{
+    "productos_start_wars":{
+        "taza":{
+            "nombre":"taza",
+            "precio":"20000"
+        },
+
+        "vaso":{
+            "nombre":"vaso",
+            "precio":"20000"
+        }
+       
+    }
+}
