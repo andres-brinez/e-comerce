@@ -1,4 +1,6 @@
-
+.invisible{
+  display:none;
+}
 .article-type-product {
   margin: 35px 5%;
   font-family: "Raleway", sans-serif;
