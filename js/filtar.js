@@ -1,7 +1,4 @@
 const campo_filtrar = document.querySelector("[input-buscar]")
-const lupa = document.querySelector(".burcador-lupa")
-console.log(lupa)
-
 
 campo_filtrar.addEventListener("input", () => {
 

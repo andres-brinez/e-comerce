@@ -28,9 +28,8 @@ button_login.addEventListener('click', (evento) => {
     }
 
     else{
-        window.location.replace("./agregar-producto.html");   
+        window.location.replace("./inicio-administrador.html");   
     }
-
 })
 
 

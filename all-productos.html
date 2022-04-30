@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./static/img/header/icon.svg" type="image/x-icon">
-  <title>e-commerce</title>
+  <title>E-commerce</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="./static/style/predeterminados/normalize.css" />
   <link rel="stylesheet" href="./static/style/predeterminados/reset.css" />
   <link rel="stylesheet" href="./static/style/header.css" />
-  <link rel="stylesheet" href="./static/style/1-hero.css" />
-  <link rel="stylesheet" href="./static/style/login.css" />
   <link rel="stylesheet" href="./static/style/2-products.css" />
   <link rel="stylesheet" href="./static/style/3-contacto.css" />
   <link rel="stylesheet" href="./static/style/footer.css">
@@ -36,66 +34,27 @@
           <img class="icon_leter_one" src="./static/img/header/Alura.svg" alt="icono alura" />
           <img class="icon_leter_two" src="./static/img/header/Geek.svg" alt="icono geek" />
         </h1>
-      </div>
-      <div class="contenedor-buscador">
-        <input type="text" class="buscador-input" placeholder="¿Qué categoria deseas buscar?" input-buscar />
-        <img src="./static/img/header/lupa.svg" alt="lupa" class="burcador-lupa" />
+        <div class="contenedor-buscador">
+          <input type="text" class="buscador-input" placeholder="¿Qué categoria deseas buscar?" input-buscar />
+          <img src="./static/img/header/lupa.svg" alt="lupa" class="burcador-lupa" />
+        </div>
       </div>
     </div>
     <div class="right">
-      <a href="./login.html" class="button-login">Login</a>
+      <a href="./login.html" class="button-login">Ingresar</a>
     </div>
   </header>
   <main>
-    <section class="section-hero">
-      <div class="hero-img desktop">
-        <img src="./static/img/section-hero/Hero-movil.svg" alt="imagen hero" />
-      </div>
-      <div class="hero-informacion">
-        <h2 class="titulo-hero">Febrero Promocional</h2>
-        <p class="parrafo_hero">
-          Productos selecionados con 33% de descuento
-        </p>
-        <a href="#consolas" class="button-hero"> Ver Consolas</a>
-      </div>
-    </section>
-
+ 
     <section class="section-products">
-      <article class="article-type-product" category="Star Wars">
-        <div class="descripcion">
-          <h2 class="title-type-product">Start Wars</h2>
-          <div class="see-all">
-            <a href="./all-productos.html">ver todo</a><img src="./static/img/section-products/flecha.svg" alt="flecha" class="flecha" />
-          </div>
+      <article class="article-type-product" >
+        <div class="descripcion titulo">
+          <h2 class="title-type-product">Todos los productos</h2>
         </div>
-        <div class="contenedor-produtos " start-wars> 
+        <div class="contenedor-produtos " contenedor-productos> 
         </div>
       </article>
-
-      <article id="consolas" class="article-type-product" category="Consolas">
-        <div class="descripcion">
-          <h2 class="title-type-product">Consolas</h2>
-          <div class="see-all">
-            <a href="./all-productos.html">ver todo</a><img src="./static/img/section-products/flecha.svg" alt="flecha"
-              class="flecha" /></a><img src="" alt="" class="flecha" />
-          </div>
-        </div>
-
-        <div class="contenedor-produtos" consolas>  
-        </div>
-      </article>
-
-      <article class="article-type-product" category="Diversos">
-        <div class="descripcion">
-          <h2 class="title-type-product">Diversos</h2>
-          <div class="see-all">
-            <a href="./all-productos.html">ver todo</a><img src="./static/img/section-products/flecha.svg" alt="flecha"
-              class="flecha" /></a><img src="" alt="" class="flecha" />
-          </div>
-        </div>
-        <div class="contenedor-produtos" diversos >
-        </div>
-      </article>
+      
     </section>
     
   </main>
@@ -130,10 +89,9 @@
     <p class="contenido">Desarrollado por Andres Briñez</p>
     <p class="año">Abril-2022</p>
   </footer>
-  <script src="./js/filtar.js"></script>
   <script src="./js/validaciones/validar-form-contact.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- importar  codigo alert  -->
-  <script type="module" src="./js/mostrar-datos-inicio/traer-datos.js"></script>
+  <script src="./js/mostrar all productos/traer-datos.js" type="module"></script>
 </body>
 
 </html>
