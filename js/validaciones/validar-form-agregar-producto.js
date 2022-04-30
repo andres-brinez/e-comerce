@@ -1,5 +1,5 @@
-const button_agregar = document.querySelector('.button-agregar-producto');
 
+const button_agregar = document.querySelector('.button-agregar-producto');
 
 button_agregar.addEventListener('click', (evento) => {
     evento.preventDefault();
@@ -49,11 +49,14 @@ button_agregar.addEventListener('click', (evento) => {
     }
 
     else {
+        const imagen = document.querySelector('.box-img');
+      
 
         Swal.fire({
             icon: 'success',
             title: 'Producto agregado ',
         })
+
 
         //pone  en blanco el input
         input_name.value = '';

@@ -1,4 +1,4 @@
-export function eliminar_imagen(caja_imagen, parrafo) {
+export function eliminar_imagen() {
     const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
 
     opciones_agregar_archivo.classList.remove('oculto')
