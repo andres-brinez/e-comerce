@@ -4,8 +4,8 @@ const estructara_producto = (nombre, precio, imagen) => {
 
     const contenido = `
             <div class="imagen-editar">
-            <img src="/static/img/section-products/icon-eliminar.svg" class="icon-eliminar" />
-            <img src="/static/img/section-products/icon-editar.svg" class="icon-editar"/>
+            <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar" />
+            <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/>
             <img src=${imagen}  class="imagen-producto" />
             </div>
             <p class="name-product">${nombre}</p>
