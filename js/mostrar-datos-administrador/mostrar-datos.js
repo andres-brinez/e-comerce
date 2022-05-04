@@ -1,11 +1,12 @@
-const estructara_producto = (nombre, precio, imagen) => {
+const estructara_producto = (nombre, precio, imagen,id) => {
     const contenedor = document.createElement("div")
+    
     contenedor.classList.add("contenedor-producto")
 
     const contenido = `
             <div class="imagen-editar">
-            <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar" />
-            <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/>
+            <a href="./editar-producto.html?id=${id}"><img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
+            <a href="./editar-producto.html?id=${id}"><img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/></a>
             <img src=${imagen}  class="imagen-producto" />
             </div>
             <p class="name-product">${nombre}</p>
@@ -14,14 +15,16 @@ const estructara_producto = (nombre, precio, imagen) => {
             `
     contenedor.innerHTML = contenido;
     return contenedor;
+ 
 }
 
 
 export function mostrar_datos(informacion_producto,contenedor_producto){
-   
+    //recorrer 
     for (let i = 0; i < informacion_producto.length; i++) {
         const elemento = informacion_producto[i];
-        const estructura_elemento = estructara_producto(elemento.nombre, elemento.precio, elemento.imagen)
+        const estructura_elemento = estructara_producto(elemento.nombre, elemento.precio, elemento.imagen,elemento.id)
         contenedor_producto.appendChild(estructura_elemento)
-    }
+        
+    }   
 }

@@ -2,7 +2,7 @@ import { mostrar_datos } from "./mostrar-datos.js";
 
 //enviar la peticion al servidor
 const http = new XMLHttpRequest()
-http.open('GET', 'https://andres-brinez.github.io/json-ecomerce/informacion.json')
+http.open('GET', "./json.json", true)
 http.send();
 
 //para ver  la respuesta del servidor  a la peticion cuando cargue 
