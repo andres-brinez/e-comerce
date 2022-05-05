@@ -13,11 +13,12 @@ const estructara_producto = (nombre, precio, imagen) => {
 }
 
 
-export function mostrar_datos(informacion_producto,contenedor_producto){
+export function mostrar_datos(informacion_producto){
    
     for (let i = 0; i < informacion_producto.length; i++) {
         const elemento = informacion_producto[i];
         const estructura_elemento = estructara_producto(elemento.nombre, elemento.precio, elemento.imagen)
-        contenedor_producto.appendChild(estructura_elemento)
+        const contenedor_productos=document.querySelector(".contenedor-produtos ")
+        contenedor_productos.appendChild(estructura_elemento)
     }
 }
