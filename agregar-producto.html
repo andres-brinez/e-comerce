@@ -128,9 +128,21 @@
             rows="4"
             placeholder="Descripción del producto"
           ></textarea>
+          <div class="categoria">
+
+            <label for="categoria" class="categoria__label">Categoria</label>
+						<select name="categoria" id="categoria" form="add__product__form" class="input__select__categoria">
+              <option value="Consolas">Consolas</option>
+							<option value="StarWars">StarWars</option>
+							<option value="Diversos">Diversos</option>
+              <option value="Diversos">Otros</option>
+						</select>
+					</div>
           <button class="button-agregar-producto" type="file">
             Agregar producto
           </button>
+          </div>
+        
         </form>
       </div>
     </main>
@@ -189,21 +201,23 @@
 
     <script
       type="module"
-      src="./js/agregar-productos/validaciones/validar-button-img.js"
+      src="./js/administrador/mostrar-datos-administrador/agregar-productos/validaciones/validar-button-img.js"
     ></script>
     <script
       type="module"
-      src="./js/agregar-productos/validaciones/validar-arrastrar-imagen.js"
+      src="./js/administrador/mostrar-datos-administrador/agregar-productos/validaciones/validar-arrastrar-imagen.js"   
     ></script>
     <script
-      type="module"
+      type="module"   
       src="./js/validaciones/validar-form-agregar-producto.js"
-    ></script>
+      ></script>
     <script
       type="module"
-      src="./js/validaciones/validar-form-agregar-producto.js"
+      src="./js/validaciones/validar-form-contact.js"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- importar  codigo alert  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- para generar id  -->
   </body>
 </html>

@@ -1,16 +1,15 @@
-
-
 .main-agregar-producto {
     background-color: #f5f5f5;
 }
+
 /* estilos para mostrar imagens desde js */
 
-.opcion-agregar-producto.oculto{
+.opcion-agregar-producto.oculto {
     display: none;
 }
 
-.mostrar{
-    display:flex;
+.mostrar {
+    display: flex;
 }
 
 .main-agregar-producto .container {
@@ -34,7 +33,7 @@
 
 
 
-.contenedor-imagen.ocultar{
+.contenedor-imagen.ocultar {
     display: none;
 }
 
@@ -55,10 +54,11 @@
 
 
 .box-img.ocultar {
-   
-    height: 0 ;
+
+    height: 0;
 
 }
+
 .opcion-agregar-producto {
     display: flex;
     align-items: center;
@@ -160,7 +160,16 @@ textarea {
 
 }
 
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 ;
+}
 
+.categoria label{
+    margin-right: 5px;
+}
 
 
 .button-agregar-producto {
@@ -170,6 +179,7 @@ textarea {
     background-color: #2A7AE4;
     border: none;
     color: #fff;
+  
 
 }
 

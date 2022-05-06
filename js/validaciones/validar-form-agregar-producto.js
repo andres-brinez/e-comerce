@@ -1,17 +1,19 @@
-import { agregar_json } from "../agregar-productos/json-agregar/agregar-producto.js";
 
+import { agregar_json} from "../administrador/json-agregar/agregar-producto.js"
 const button_agregar = document.querySelector('.button-agregar-producto');
 
 button_agregar.addEventListener('click', (evento) => {
 
     evento.preventDefault();
+   
     const input_name = document.querySelector('#input-name');
     const input_price = document.querySelector('#input-price');
     const descripcion_product = document.querySelector('.descripcion-producto');
     const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto')
     const contenedor = document.querySelector('.contenedor-imagen');
-    agregar_json(contenedor,input_name,input_price, descripcion_product)
-
+    const categoria = document.getElementById('categoria').value
+ 
+   
     if (input_name.value === '' || input_price.value === '' || descripcion_product.value === '') {
 
         Swal.fire({
@@ -52,8 +54,8 @@ button_agregar.addEventListener('click', (evento) => {
 
     else {
         
-        const imagen = document.querySelector('.box-img');
-      
+        const imagen = document.querySelector('.box-img').style.backgroundImage;
+        agregar_json(imagen,input_name,input_price, descripcion_product,categoria)
 
         Swal.fire({
             icon: 'success',
