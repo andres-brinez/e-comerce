@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agregar producto</title>
+    <title>Editar producto</title>
 
     <link
       rel="shortcut icon"
@@ -114,7 +114,7 @@
             />
           </div>
           <div class="contenedor-input-price-product">
-            <label for="input-price">Precio del produtco</label>
+            <label for="input-price">Precio del produto</label>
             <input
               type="number"
               id="input-price"
@@ -128,8 +128,23 @@
             rows="4"
             placeholder="Descripción del producto"
           ></textarea>
-          <button class="button-agregar-producto" type="file">
-            Agregar producto
+          <div class="categoria">
+            <label for="categoria" class="categoria__label">Categoria</label>
+            <select
+              name="categoria"
+              id="categoria"
+              form="add__product__form"
+              class="input__select__categoria"
+            >
+              <option value="Consolas">Consolas</option>
+              <option value="StarWars">StarWars</option>
+              <option value="Diversos">Diversos</option>
+              <option value="Diversos">Otros</option>
+            </select>
+          </div>
+
+          <button class="button-agregar-producto button-editar">
+            Editar Producto
           </button>
         </form>
       </div>
@@ -189,25 +204,21 @@
 
     <script
       type="module"
-      src="./js/agregar-productos/validaciones/validar-button-img.js"
+      src="./js/administrador/mostrar-datos-administrador/agregar-productos/validaciones/validar-button-img.js"
     ></script>
     <script
       type="module"
-      src="./js/agregar-productos/validaciones/validar-arrastrar-imagen.js"
+      src="./js/administrador/mostrar-datos-administrador/agregar-productos/validaciones/validar-arrastrar-imagen.js"
     ></script>
+
+    <script type="module" src="./js/administrador/editar/editar.js"></script>
     <script
       type="module"
-      src="./js/validaciones/validar-form-agregar-producto.js"
+      src="./js/administrador/editar/enviar-datos.js"
     ></script>
-    <!-- <script src="./js/editar cliente/editar-clientes.js"></script> -->
-    <script
-    type="module"
-      src="./js/validaciones/validar-form-agregar-producto.js"
-    ></script>
-   
-    
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
     <!-- importar  codigo alert  -->
   </body>
 </html>

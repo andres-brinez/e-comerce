@@ -41,7 +41,7 @@ informacion_consolas.onload = () => {
 informacion_diversos.onload = () => {
 
     const datos_diversos = JSON.parse(informacion_diversos.response) 
-    mostrar_datos(datos_diversos)
+    // mostrar_datos(datos_diversos)
 
 }
 
