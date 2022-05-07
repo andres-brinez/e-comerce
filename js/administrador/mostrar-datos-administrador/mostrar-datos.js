@@ -11,7 +11,7 @@ const estructara_producto = (nombre, precio, imagen, id) => {
             </div>
             <p class="name-product">${nombre}</p>
             <p class="price-product">${precio}</p>
-            <a href="./producto.html" class="see-product" target="_blank">Ver producto</a>
+            <a href="./producto.html?id=${id}" class="see-product" target="_blank">Ver producto</a>
             `
     contenedor.innerHTML = contenido;
     return contenedor;
