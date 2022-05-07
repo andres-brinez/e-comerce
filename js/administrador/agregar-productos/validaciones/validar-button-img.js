@@ -1,4 +1,4 @@
-import { validarFile } from "./validar-archivo.js.js.js";
+import { validarFile } from "./validar-archivo.js";
 
 const input_file = document.querySelector('#input-file');
 

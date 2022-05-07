@@ -1,5 +1,4 @@
 
-import { agregar_json} from "../administrador/json-agregar/agregar-producto.js"
 const button_agregar = document.querySelector('.button-agregar-producto');
 
 button_agregar.addEventListener('click', (evento) => {
@@ -55,8 +54,7 @@ button_agregar.addEventListener('click', (evento) => {
     else {
         
         const imagen = document.querySelector('.box-img').style.backgroundImage;
-        agregar_json(imagen,input_name,input_price, descripcion_product,categoria)
-
+    
         Swal.fire({
             icon: 'success',
             title: 'Producto agregado ',
