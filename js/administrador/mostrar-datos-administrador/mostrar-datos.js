@@ -5,10 +5,10 @@ const estructara_producto = (nombre, precio, imagen, id) => {
 
     const contenido = `
             <div class="imagen-editar">
-            <a  target="_blank" href="./editar-producto.html?id=${id}"><img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
-            <a  target="_blank" href="./editar-producto.html?id=${id}"><img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/></a>
-            <img src=${imagen}  class="imagen-producto" />
+           <a target='_blank' href="./eliminar-producto.html"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
+          
             </div>
+            <img src=${imagen}  class="imagen-producto" />
             <p class="name-product">${nombre}</p>
             <p class="price-product">${precio}</p>
             <a href="./producto.html?id=${id}" class="see-product" target="_blank">Ver producto</a>
@@ -19,6 +19,7 @@ const estructara_producto = (nombre, precio, imagen, id) => {
 }
 
 
+
 export function mostrar_datos(informacion_producto) {
     console.log()
     for (let i = 0; i < informacion_producto.length; i++) {
@@ -27,5 +28,7 @@ export function mostrar_datos(informacion_producto) {
         const contenedor_productos = document.querySelector("[contenedor-productos]")
         contenedor_productos.appendChild(estructura_elemento)
 
+
     }
 }
+

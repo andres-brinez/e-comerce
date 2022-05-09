@@ -1,5 +1,5 @@
 //muestra la  imagen que está en la api
-import { eliminar_imagen} from "../mostrar-datos-administrador/agregar-productos/validaciones/eliminar-imagen.js";
+import { eliminar_imagen} from "../agregar-productos/validaciones/eliminar-imagen.js";
 
 export function mostrar_imagen(imagen){
     const opciones_agregar_archivo = document.querySelector('.opcion-agregar-producto') 
