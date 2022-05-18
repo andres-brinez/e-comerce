@@ -49,7 +49,12 @@
   <main>
     <section class="section-hero">
       <div class="hero-img desktop">
-        <img src="./static/img/section-hero/Hero-movil.svg" alt="imagen hero" />
+        <picture>
+          <source media="(min-width:1000px)" srcset="./static/img/section-hero/Hero-desktop.svg">
+          <source media="(min-width:300px)" srcset="./static/img/section-hero/Hero-tablet.svg">
+          <source media="(min-width:200px)" srcset="./static/img/section-hero/Hero-phone.svg">
+          <img src="" alt="imagen hero" />
+        </picture>
       </div>
       <div class="hero-informacion">
         <h2 class="titulo-hero">Febrero Promocional</h2>
