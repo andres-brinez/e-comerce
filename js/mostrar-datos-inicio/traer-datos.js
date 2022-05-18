@@ -44,8 +44,11 @@ informacion_diversos.onload = () => {
     const datos_diversos = JSON.parse(informacion_diversos.response) 
     const contenedor_diversos = document.querySelector("[diversos]")
     mostrar_datos(datos_diversos, contenedor_diversos)
-
+    
 }
+
+
+
 
 
 
