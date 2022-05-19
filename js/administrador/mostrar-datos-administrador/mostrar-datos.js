@@ -20,7 +20,7 @@ const estructara_producto = (nombre, precio, imagen, id) => {
 
 
 
-export function mostrar_datos(informacion_producto) {
+export function informacion_productos_administrador(informacion_producto) {
     console.log()
     for (let i = 0; i < informacion_producto.length; i++) {
         const elemento = informacion_producto[i];

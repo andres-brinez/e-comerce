@@ -1,3 +1,6 @@
+//esto trae  la  informacion del producto por el id que tenga el producto
+// es  lo que se ve al dar click en el boton ver  producto
+
 
 //new URL es una funcion ya echa que nos trae la url
 const url = new URL(window.location);
