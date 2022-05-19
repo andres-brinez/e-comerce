@@ -1,14 +1,23 @@
+
+//new URL es una funcion ya echa que nos trae la url
+const url = new URL(window.location);
+
 const estructara_producto = (nombre, precio, imagen, id) => {
     const contenedor = document.createElement("div")
 
     contenedor.classList.add("contenedor-producto")
 
     const contenido = `
-            <div class="imagen-editar">
-           <a target='_blank' href="./eliminar-producto.html"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
-          
+            <div class="contenedor-image">
+                <div class="contenedor-eliminar">
+                    <a target='_blank' href="./eliminar-producto.html"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
+                </div>
+                <div class="contenedor-editar">
+                <a target='_blank' href="./editar-producto.html"> <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/></a>
+                </div>
+                <img src=${imagen}  class="imagen-producto" />
             </div>
-            <img src=${imagen}  class="imagen-producto" />
+    
             <p class="name-product">${nombre}</p>
             <p class="price-product">${precio}</p>
             <a href="./producto.html?id=${id}" class="see-product" target="_blank">Ver producto</a>

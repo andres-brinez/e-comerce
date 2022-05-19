@@ -100,24 +100,35 @@ a.see-product:hover {
   margin-bottom:30px;
 }
 
-.imagen-editar {
-  position: relative;
-}
 
 .icon-editar,.icon-eliminar{
   cursor: pointer;
-  position: absolute;
+
   width: 20px;
   height:20px;
   top: 10px;
 }
 
-.icon-eliminar{
-  left: 20%;
+.contenedor-eliminar{
+  top: 10px;
+  left: 68%;
+  position: absolute;
+  
+
  
 }
-.icon-editar{
-  left: 37%;
+.contenedor-editar{
+  top: 10px;
+  left: 85%;
+  position: absolute;
+  /* border: red 1px solid; */
+}
+
+.contenedor-image{
+  position: relative;
+  /* border: red 1px solid; */
+ 
+  width:100%;
 }
 
 /*  celulares */
