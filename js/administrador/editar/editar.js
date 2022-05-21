@@ -9,6 +9,25 @@ const id = url.searchParams.get('id');
 const administrador = url.searchParams.get('administrador')
 console.log(administrador)
 
+function cambiar_valores(producto,numero_categoria) {
+    const input_name = document.getElementById('input-name')
+    const input_price = document.getElementById('input-price')
+    const input_description = document.querySelector('.descripcion-producto')
+    const input_categoria = document.getElementById('categoria')
+    const imagen= producto.imagen
+    
+    input_name.value = producto.nombre
+    input_price.value = producto.precio
+    // los select se cambian sengun la posicion en la que estan
+    input_description.value=producto.descripcion
+    input_categoria.selectedIndex = numero_categoria
+    mostrar_imagen(imagen)
+
+
+}
+
+
+
 if (administrador === 'True') {
     if (id.indexOf(2.) == 0) {
         detalle_producto(id, 'consolas').then((producto) =>
@@ -31,11 +50,11 @@ if (administrador === 'True') {
     }
     
     
-    const input_name = document.getElementById('input-name')
-    const input_price = document.getElementById('input-price')
-    const input_description = document.querySelector('.descripcion-producto')
-    const input_categoria = document.getElementById('categoria')
+
 }
+
+
+
 
 else if (administrador === 'False') {
     swal.fire({
@@ -57,15 +76,4 @@ else if (administrador === 'False') {
 
 
 
-function cambiar_valores(producto,numero_categoria) {
-    const imagen= producto.imagen
 
-    input_name.value = producto.nombre
-    input_price.value = producto.precio
-    // los select se cambian sengun la posicion en la que estan
-    input_description.value=producto.descripcion
-    input_categoria.selectedIndex = numero_categoria
-    mostrar_imagen(imagen)
-
-
-}

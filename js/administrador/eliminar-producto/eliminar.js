@@ -8,7 +8,7 @@ const id = url.searchParams.get('id')
 const nombre = url.searchParams.get('nombre');
 const imagen = url.searchParams.get('imagen')
 const administrador = url.searchParams.get('administrador')
-console.log(id, nombre,administrador)
+
 // si es administrador puede eliminar
 if (administrador== 'True'){
     if (id == null || id == '') {
