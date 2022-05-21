@@ -13,7 +13,7 @@ const estructara_producto = (nombre, precio, imagen, id,administrador) => {
                     <a href="./inicio-administrador.html?administrador=${administrador}&id=${id}&nombre=${nombre}&imagen=${imagen}"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
                 </div>
                 <div class="contenedor-editar">             
-                <a target='_blank' href="./editar-producto.html?id=${id}">
+                <a target='_blank' href="./editar-producto.html?administrador=${administrador}&id=${id}">
                 <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/>
                 </a>
                     
