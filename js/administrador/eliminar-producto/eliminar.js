@@ -1,59 +1,48 @@
+// codigo para  eliminar  un producto del administrador
+
 //new URL es una funcion ya echa que nos trae la url
 const url = new URL(window.location);
-//searchParams.get de la  url nos trae el elemento que especifivamos 
-const id = url.searchParams.get('id');
-const administrador = url.searchParams.get('administrador');
-
-console.log(id)
-
-
-const deleteIcons = document.getElementsByClassName("icon-eliminar");
-console.log(deleteIcons);
-//new URL es una funcion ya echa que nos trae la url
 
 //searchParams.get de la  url nos trae el elemento que especifivamos 
+const id = url.searchParams.get('id')
+const nombre = url.searchParams.get('nombre');
+const imagen = url.searchParams.get('imagen')
 
-console.log(administrador)
+if (id == null || id == '') {
+    'pass' // pass significa que  no haga nada 
 
-for (let i = 0; i < deleteIcons.length; i++){
-    let icono= deleteIcons[i]
-    console.log(i)
-    console.log(icono)
 }
-    
-// deleteIcons.forEach((icon) =>
-// 			icon.addEventListener("click", async (e) => {
-// 				const productId = e.target.parentElement.id;
-// 				if (productId.length > 3) {
-// 					swal({
-// 						title: "Esta seguro de querer eliminar el producto?",
-// 						text: "Una vez eliminado no se podra recuperar!",
-// 						icon: "warning",
-// 						buttons: true,
-// 						dangerMode: true,
-// 					}).then((willDelete) => {
-// 						if (willDelete) {
-// 							swal("Producto Eliminado con exito!", {
-// 								icon: "success",
-// 								button: false,
-// 							});
-// 							if (url.searchParams.get("results")){
-// 									clientControllers.eliminarProducto(productId);
-// 							}else{clientControllers.eliminarProducto(productId);}
-								
-// 							window.setTimeout(() => window.location.reload(), 2000);
-// 						} else {
-// 							swal("Tu producto no se elimino");
-// 						}
-// 					});
-// 				} else {
-// 					swal({
-// 						title: "Opss!",
-// 						text: "No es posible eliminar este producto!",
-// 						icon: "error",
-// 						button: "Ok!",
-// 					});
-// 				}
-// 			})
-// 		);
 
+else if (id > 1) {
+    console.log(id)
+    swal.fire({
+        title: `Esta seguro de querer eliminar el producto ${nombre} ?`,
+        text: "Una vez eliminado no se podra recuperar!",
+        imageUrl: imagen,
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: `imagen del producto ${nombre}`,
+        showCancelButton: true,
+        confirmButtonColor: '#008f39',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Cancelar'
+    })
+        .then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Eliminado!',
+                    `El producto ${nombre} fue eliminado`,
+                    'success'
+                )
+            }
+
+            else {
+                Swal.fire(
+                    'Cancelado',
+                    `El producto ${nombre} no  fue eliminado`,
+                    'error'
+                )
+            }
+        })
+}
