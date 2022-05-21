@@ -9,8 +9,8 @@ const estructara_producto = (nombre, precio, imagen, id) => {
 
     const contenido = `
             <div class="contenedor-image">
-                <div class="contenedor-eliminar">
-                    <a target='_blank' href="./eliminar-producto.html"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
+                <div class="contenedor-eliminar"> 
+                    <a href="http://127.0.0.1:5501/inicio-administrador.html?administrador=True?id=${id}"> <img src="./static/img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
                 </div>
                 <div class="contenedor-editar">
                 <a target='_blank' href="./editar-producto.html"> <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/></a>
@@ -24,7 +24,6 @@ const estructara_producto = (nombre, precio, imagen, id) => {
             `
     contenedor.innerHTML = contenido;
     return contenedor;
-
 }
 
 
