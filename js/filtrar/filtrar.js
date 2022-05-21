@@ -32,7 +32,7 @@ campo_filtrar.addEventListener("input", () => {
                 Swal
                     .fire({
                         title: "Lo sentimos",
-                        text: "No hay resultados para esa busqueda",
+                        text: `No hay resultados para la busqueda ${campo_filtrar.value} `,
                         icon: "info",
                         button: "Ok!",
                     })
