@@ -67,8 +67,12 @@ else {
             confirmButtonColor: '#008f39',
             confirmButtonText: 'OK',
             
-        })
+        }).then((result) => {
+        if (result.isConfirmed) {
+            location.href='./inicio-administrador.html?administrador=False'
 
+        }
+            })
     }
     
 
