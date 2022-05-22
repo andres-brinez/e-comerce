@@ -136,4 +136,8 @@ img.icon_leter_two {
 
 /* tablet */
 
-@media (min-width: 700px) and (max-width: 910px) {}
+@media (min-width: 700px) and (max-width: 910px) {
+  #button-registrarce{
+    display: none
+  }
+}
