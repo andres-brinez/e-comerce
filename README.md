@@ -1,8 +1,6 @@
-# e-comerce hallenge Cuatro de Seis | Formación Front-End | AluraGeek E-Commerce
+Cuarto Challenge | Formación Front-End | AluraGeek E-Commerce
 
-# AluraGeek-ONE-Alura_Challenge
-
-**Requerimiiento**
+**Requerimiento**
 
 La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
 
@@ -15,7 +13,7 @@ Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe
 - Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador. 
 - Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 
-** Es muy importante que el sitio sea adaptable ** para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
+**Es muy importante que el sitio sea adaptable** para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
 
 Vista inicio
 
