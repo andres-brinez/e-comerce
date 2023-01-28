@@ -1,5 +1,5 @@
 const data= {
-    "start_wars": [
+    "Start wars": [
         {
             "nombre": "Taza soldado de asalto",
             "precio": "  66,00",
@@ -37,7 +37,7 @@ const data= {
             "id": 1.6
         }
     ],
-    "consolas": [
+    "Consolas": [
         {
             "nombre": "Control Consola",
             "precio": "  50,00",
@@ -75,7 +75,7 @@ const data= {
             "id": 2.6
         }
     ],
-    "diversos": [
+    "Diversos": [
         {
             "nombre": "Camisa Atari",
             "precio": "  75,00",
@@ -114,9 +114,9 @@ const data= {
         }
     ],
   
-    "otr":[
+    // "otr":[
       
-    ]
+    // ]
   
   }
 
