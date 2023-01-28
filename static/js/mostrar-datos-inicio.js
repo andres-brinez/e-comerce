@@ -52,7 +52,7 @@ export function informacion_basic_producto( data) {
         // recorrer cada producto
         for (let i = 0; i < productos.length; i++) {
 
-            const producto = productos[i];
+            let producto = productos[i];
             // crea la estructra
             const estructura_elemento=estructura_producto(producto.imagen,producto.nombre,producto.precio,producto.id)
             
@@ -71,7 +71,6 @@ export function informacion_basic_producto( data) {
 
         }
 
-        const estructura_elemento=estructura_producto(elemento.nombre, elemento.precio, elemento.imagen, elemento.id)
     }
 
     
