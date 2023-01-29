@@ -1,10 +1,10 @@
 function informationProducto (idUrlProduct,Category,data){
 
-    const newCategory = Category.replace('%20',' ')
+    
 
-    for   (let i=0; i< data[newCategory].length; i++) {
-        if (data[newCategory][i].id == parseFloat(idUrlProduct)) {
-            return data[newCategory][i]
+    for   (let i=0; i< data[Category].length; i++) {
+        if (data[Category][i].id == parseFloat(idUrlProduct)) {
+            return data[Category][i]
         }
         
     }
