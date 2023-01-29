@@ -1,4 +1,5 @@
-const container = ()=>{
+// container del producto y  productos similaes
+const createContainers = ()=>{
 
     const sectionProducto = document.createElement('section');
     sectionProducto.classList.add('producto');
@@ -45,22 +46,24 @@ const container = ()=>{
 }
 
     
-const estructura_productos_similares = (nombre, precio, imagen,id) => {
-    const contenedor = document.createElement("div")
-    contenedor.classList.add("contenedor-producto")
+export const estructura_productos_similares = (producto) => {
+    const contenedor_producto = document.createElement("div")
+    contenedor_producto.classList.add("contenedor-producto")
     const contenido = `
-            <img src=${imagen} />
-            <p class="name-product">${nombre}</p>
-            <p class="price-product">${precio}</p>
-            <a href="./producto.html?id=${id}" class="see-product" target="_blank">Ver producto</a>
+            <img src=${producto.imagen} />
+            <p class="name-product">${producto.nombre}</p>
+            <p class="price-product">${producto.precio}</p>
+            <a href="./producto.html?id=${producto.id}" class="see-product" target="_blank">Ver producto</a>
     `
-    contenedor.innerHTML = contenido;
-    return contenedor;
+    contenedor_producto.innerHTML = contenido;
+
+    const contenedor_productos= document.querySelector('.contenedor-produtos')
+    contenedor_productos.appendChild(contenedor_producto)
 }
 
 export function estructura_producto(producto){
     
-    container()
+    createContainers()
 
     const imagen_producto = document.querySelector('.producto-imagen')
     const precio_producto = document.querySelector('.producto-precio')
@@ -72,5 +75,5 @@ export function estructura_producto(producto){
     imagen_producto.src = producto.imagen
     imagen_producto.alt = producto.nombre
     precio_producto.textContent = producto.precio
-    
+
 }
