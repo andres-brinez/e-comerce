@@ -9,25 +9,41 @@ const url = new URL(window.location);
 
 console.log(url);
 
-// home
-if (url.hash===''){
-    console.log('inicio')
-    informacion_basic_producto(data)
-    
+window.addEventListener('hashchange',() =>{
+    location.reload()
+    window.scrollTo(0, 0); /* lleva  al inicio de la página */
+});
+
+// al recargar pagina
+window.onload = ()=> {
+    console.log('onload')
+    navigation()
 }
 
-else if (url.hash==='#allProducts'){
-    console.log('allProducts')
-    informacion_basic_producto(data,'all-products')
+function navigation (){
+    // home
+    if (url.hash===''){
+        console.log('inicio')
+        informacion_basic_producto(data)
+        
+    }
+
+    else if (url.hash==='#allProducts'){
+        console.log('allProducts')
+        informacion_basic_producto(data,'all-products')
+    }
+
+    else if (url.hash.includes('productoID')) {
+        console.log('producto')
+        buttonRegister.style.display = 'none'
+
+        mostrarProducto(url,data)
+
+    }
 }
 
-else if (url.hash.includes('productoID')) {
-    console.log('producto')
-    buttonRegister.style.display = 'none'
 
-    mostrarProducto(url,data)
 
-}
 
 // else if (url.pathname.includes('/inicio-administrador.html')) {
 //     informacion_productos_administrador(informacion_start_wars)
