@@ -1,4 +1,4 @@
-const estructura_producto = (imagen,nombre,precio,id) => {
+const estructura_producto = (categoria,imagen,nombre,precio,id) => {
     
     const contenedor = document.createElement("div")
     contenedor.classList.add("contenedor-producto")
@@ -6,7 +6,7 @@ const estructura_producto = (imagen,nombre,precio,id) => {
             <img src=${imagen} />
             <p class="name-product">${nombre}</p>
             <p class="price-product">${precio}</p>
-            <a href="./producto.html?id=${id}" class="see-product" target="_blank">Ver producto</a>
+            <a href="#Category=${categoria}/productoID=${id}" class="see-product" >Ver producto</a>
     `
     contenedor.innerHTML = contenido;
     return contenedor;
@@ -14,5 +14,5 @@ const estructura_producto = (imagen,nombre,precio,id) => {
 
 export {estructura_producto} 
     
-
+// target="_blank"
 
