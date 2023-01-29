@@ -45,15 +45,15 @@ const createContainers = ()=>{
     
 }
 
-    
-export const estructura_productos_similares = (producto) => {
+export const estructura_productos_similares = (categoria,producto) => {
     const contenedor_producto = document.createElement("div")
+    console.log(producto)
     contenedor_producto.classList.add("contenedor-producto")
     const contenido = `
             <img src=${producto.imagen} />
             <p class="name-product">${producto.nombre}</p>
             <p class="price-product">${producto.precio}</p>
-            <a href="./producto.html?id=${producto.id}" class="see-product" target="_blank">Ver producto</a>
+            <a href="#Category=${categoria}/productoID=${producto.id}" class="see-product">Ver producto</a>
     `
     contenedor_producto.innerHTML = contenido;
 

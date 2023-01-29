@@ -11,7 +11,7 @@ function productos_similares(categoria,data) {
     // rrcorrer cada producto
 
     productosSimilares.forEach(producto => {
-        estructura_productos_similares(producto)
+        estructura_productos_similares(categoria,producto)
     })
 
 
