@@ -25,6 +25,7 @@ function navigation (){
     if (url.hash===''){
         console.log('inicio')
         informacion_basic_producto(data)
+        sectionHero.style='block';
         
     }
 

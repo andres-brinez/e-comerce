@@ -1,4 +1,5 @@
 const  main = document.querySelector('main');
+const sectionHero= document.querySelector('.section-hero');
 
 const containerHeader = document.querySelector('header');
 const sectionProducts= document.getElementsByClassName('section-products')[0]
