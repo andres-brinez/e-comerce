@@ -23,7 +23,7 @@ function createContainerArticle(key){
 
 }
 
-function createContainerAllProducts(){
+function createContainerAllProducts(titulo){
 
     const container = document.createElement('section');
     container.classList.add("section-products")
@@ -31,7 +31,7 @@ function createContainerAllProducts(){
     container.innerHTML=`
         <article class="article-type-product" >
             <div class="descripcion titulo">
-            <h2 class="title-type-product">Todos los productos</h2>
+            <h2 class="title-type-product">${titulo}</h2>
             </div>
             <div class="contenedor-produtos" id='all-products' contenedor-productos> 
             </div>
