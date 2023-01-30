@@ -6,7 +6,7 @@ export function informacion_basic_producto(data,allProducts=null ) {
 
     // crea el contendor  solo una vez  si es para todos lox productos
     if(allProducts!=null) {
-        createContainerAllProducts();
+        createContainerAllProducts('Todos los productos');
     }
     
     // accede a cada llave del objeto (cada categoria)
