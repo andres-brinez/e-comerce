@@ -7,3 +7,7 @@ const buttonRegister= document.getElementById('button-registrarce')
 
 // informacion de  un producto
 const titulo = document.getElementsByTagName('title')[0]
+
+// filtrar
+const campo_filtrar = document.querySelector("[input-buscar]")
+const lupaIcon=document.querySelector(".buscador-lupa")
