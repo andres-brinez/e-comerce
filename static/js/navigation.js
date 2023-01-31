@@ -1,6 +1,7 @@
 import { data } from "../../Information/data.js";
 import { informacion_basic_producto } from "./product-card-basic/index.js";
 import { mostrarProducto } from "./InformationProducto/index.js";
+import { register } from "./register/index.js";
 
 // import { informacion_productos_administrador } from "./mostrar-datos-administrador/mostrar-datos.js"
 
@@ -16,7 +17,6 @@ window.addEventListener('hashchange',() =>{
 
 // al recargar pagina
 window.onload = ()=> {
-    console.log('onload')
     navigation()
 }
 
@@ -37,10 +37,15 @@ function navigation (){
     else if (url.hash.includes('productoID')) {
         console.log('producto')
         buttonRegister.style.display = 'none'
-
         mostrarProducto(url,data)
 
     }
+
+    else if  (url.hash==='#register') {
+        console.log('register')
+        register()
+    }
+
 }
 
 
