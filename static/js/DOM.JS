@@ -11,3 +11,9 @@ const titulo = document.getElementsByTagName('title')[0]
 // filtrar
 const campo_filtrar = document.querySelector("[input-buscar]")
 const lupaIcon=document.querySelector(".buscador-lupa")
+
+// Formulario de contacto 
+
+const buttonEnd = document.querySelector('.input-button');
+const input_name = document.querySelector('.input-name');
+const input_mensaje = document.querySelector('#mensaje')
