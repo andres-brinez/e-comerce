@@ -1,5 +1,5 @@
 
-buttonEnd.addEventListener('click', () => {
+buttonsend.addEventListener('click', () => {
 
 
     if (input_name.value === '' || input_mensaje.value === '') {
