@@ -43,6 +43,7 @@ function navigation (){
 
     else if  (url.hash==='#register') {
         console.log('register')
+        buttonRegister.style.display = 'none'
         register()
     }
 
