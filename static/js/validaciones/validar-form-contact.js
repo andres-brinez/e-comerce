@@ -1,9 +1,5 @@
 
-
-const button = document.querySelector('.input-button');
-const input_name = document.querySelector('.input-name');
-const input_mensaje = document.querySelector('#mensaje')
-button.addEventListener('click', () => {
+buttonEnd.addEventListener('click', () => {
 
 
     if (input_name.value === '' || input_mensaje.value === '') {
