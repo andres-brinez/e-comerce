@@ -5,6 +5,8 @@ function validationForm(){
 
     
     const buttonRegister = document.getElementById('buttonRegister')
+    const input_name = document.querySelector('#nameUser');
+    const selectUser = document.querySelector('#selectRol')
     const input_email = document.querySelector('#email');
     const input_password = document.querySelector('#password');
 
@@ -12,7 +14,7 @@ function validationForm(){
 
         const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     
-        if (input_email.value === '' || input_password.value === '') {
+        if (input_email.value === '' || input_password.value === ''|| selectUser.value=='' || input_name.value=='') {
     
             Swal.fire({
                 icon: 'error',
@@ -46,7 +48,9 @@ function validationForm(){
             
             const data  ={
                 email: input_email.value,
-                password: input_password.value
+                password: input_password.value,
+                name: input_name.value,
+                rol: selectUser.value
             }
     
             const saveDatas=saveData(data)
