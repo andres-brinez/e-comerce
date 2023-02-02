@@ -2,6 +2,7 @@ import { data } from "../../Information/data.js";
 import { informacion_basic_producto } from "./product-card-basic/index.js";
 import { mostrarProducto } from "./InformationProducto/index.js";
 import { register } from "./register/index.js";
+import { login } from "./login/index.js";
 
 // import { informacion_productos_administrador } from "./mostrar-datos-administrador/mostrar-datos.js"
 
@@ -46,6 +47,15 @@ function navigation (){
         buttonRegister.style.display = 'none'
         register()
     }
+
+    else if (url.hash==='#login') {
+        console.log('login')
+        buttonLogin.style.display = 'none'
+        buttonRegister.style.display = 'inline-block'
+        login()
+
+    }
+
 
 }
 
