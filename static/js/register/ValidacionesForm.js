@@ -62,7 +62,7 @@ function validationForm(){
                 .then(resultado => {
                     //cuando cierre el mensaje en ok
                     if (resultado.value) {
-                        window.location.replace("./login.html");
+                        window.location.replace("#login");
     
                     }
                 });
