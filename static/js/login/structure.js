@@ -8,7 +8,7 @@ function structureLogin(){
     <form action="" class="formulario-login">
         <input id="login-email" type="email" placeholder="Escriba su correo electrónico">
         <input id="login-password" type="password" placeholder="Escriba su contraseña">
-        <button id="login-buttom" type="submit" >Entrar </button>
+        <button id="login-buttom" type="button" >Entrar </button>
     </form>
     `
 
