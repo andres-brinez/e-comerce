@@ -33,6 +33,14 @@
     border-bottom: 2px #C8C8C8 solid;
 }
 
+.formulario-login select{
+    padding: 20px  30px;
+    border: none;
+    border-bottom: 2px #C8C8C8 solid;
+    margin-bottom: 20px;
+}
+
+
 .formulario-login input:focus{
     outline: none;
 }
