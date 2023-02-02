@@ -72,12 +72,13 @@ img.icon_leter_two {
 }
 
 .button-login {
-  padding: 3% 30px;
+  padding: 10px 15px;
   border: solid 1px #2a7ae4;
   color: #2a7ae4;
   text-decoration: none;
   font-size: 16px;
 }
+
 
 .button-login:hover{
   background-color: #2a7ae4;
@@ -131,9 +132,7 @@ img.icon_leter_two {
     height: 20px;
   }
 
-  .button-login {
-    padding: 10px 15px;
-  }
+ 
 }
 
 /* tablet */
