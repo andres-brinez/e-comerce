@@ -1,9 +1,17 @@
 import { saveData } from "./SaveDate.js";
+import { mostrarAlert } from "../utils/alerts.js";
+import { validationFormInicial } from "../utils/valadationFormLoginRegister.js";
+
+let informationAlert={
+    icon: 'error',
+    title: 'Oops...Error',
+    text: '',
+    footer:''
+}
 
 
 function validationForm(){
 
-    
     const buttonRegister = document.getElementById('buttonRegister')
     const input_name = document.querySelector('#nameUser');
     const selectUser = document.querySelector('#selectRol')
@@ -11,50 +19,19 @@ function validationForm(){
     const input_password = document.querySelector('#password');
 
     buttonRegister.addEventListener('click', () => {
+        const camposFormularioCorrectos=validationFormInicial(informationAlert)
 
-        const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    
-        if (input_email.value === '' || input_password.value === ''|| selectUser.value=='' || input_name.value=='') {
-    
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...Error',
-                text: 'Campo vacio ',
-            })
-        }
-    
-        //devuelver false si no cumple  con el regex
-        else if (!emailRegex.test(input_email.value)) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...Error',
-                text: 'Formato del correo incorrecto '
-                ,
-    
-            })
-        }
-    
-        else if (input_password.value.length < 5) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...Error',
-                text: 'Contraseña Corta '
-                ,
-    
-            })
-        }
-    
-        else {
-            
+        if (camposFormularioCorrectos){
+
             const data  ={
                 email: input_email.value,
                 password: input_password.value,
                 name: input_name.value,
-                rol: selectUser.value
+                rol: selectUser.value,
             }
     
-            const saveDatas=saveData(data)
-            // saveData(data)
+            const saveDatas=saveData(data) // devuelve si se guardaron los datos
+            
             if(saveDatas===true){
 
                 Swal.fire({
@@ -72,14 +49,10 @@ function validationForm(){
                 });
             }
             else {
-                Swal.fire({
-                icon: 'error',
-                title: 'Oops...Error',
-                text: 'Intenda de  nuevo más tarde ' ,
-                button: "Ok!",
-                })
-            }  
+                informationAlert.text= 'Intenda de  nuevo más tarde'
+                mostrarAlert(informationAlert)
 
+            }  
         }
     })
 }
