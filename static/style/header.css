@@ -71,7 +71,7 @@ img.icon_leter_two {
   cursor: pointer;
 }
 
-.button-login {
+.button-login,.buttonSalir {
   padding: 10px 15px;
   border: solid 1px #2a7ae4;
   color: #2a7ae4;
@@ -80,7 +80,7 @@ img.icon_leter_two {
 }
 
 
-.button-login:hover{
+.button-login:hover,.buttonSalir_hover{
   background-color: #2a7ae4;
   color: #fff
 }
