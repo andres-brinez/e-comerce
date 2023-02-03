@@ -1,44 +1,11 @@
 import { mostrarAlert } from "../utils/alerts.js";
+import { validationFormInicial } from "../utils/valadationFormLoginRegister.js";
 
 let informationAlert={
     icon: 'error',
     title: 'Oops...Error',
     text: '',
     footer:''
-}
-
-
-function validationFormLogin(){
-    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    const input_email = document.querySelector('#login-email')
-    const input_password = document.querySelector('#login-password')
-
-    // Valida los datos del formulario
-
-    if (input_email.value === '' || input_password.value === '') {
-        console.log('Please enter')
-        informationAlert.text = 'campos vacios'    
-    }
-
-    //devuelver false si no cumple  con el regex
-    else if (!emailRegex.test(input_email.value)) {
-        
-        informationAlert.text='Formato del correo incorrecto'
-
-    }
-
-    else if (input_password.value.length < 5) {
-        
-        informationAlert.text = 'contraseña corta'
-    }
-    
-    else {
-        return true
-    }
-
-    mostrarAlert(informationAlert)
-
-
 }
 
 function validacionWithLocalStorage(){
@@ -92,22 +59,20 @@ function validacionWithLocalStorage(){
 }
 
 function validacionForm(){
+
     const buttonSendLogin = document.querySelector('#login-buttom')
     
     buttonSendLogin.addEventListener('click', () => {
 
-        const camposFormularioCorrectos=validationFormLogin()
+        const camposFormularioCorrectos=validationFormInicial(informationAlert)
 
         // si los campos del formulario estan correctos pasan la siguiente validación
         if (camposFormularioCorrectos) {
 
             validacionWithLocalStorage()
-            
+
         }
-
     })
-
-    
 }
 
 export {validacionForm}
