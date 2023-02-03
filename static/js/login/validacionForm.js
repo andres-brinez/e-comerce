@@ -53,7 +53,12 @@ function validacionWithLocalStorage(){
         
         localStorage.setItem('sesionActive', JSON.stringify(dataLocalStorage.email))
     }
+    
+
+    if (informationAlert.text.length>5){
         mostrarAlert(informationAlert)
+
+    }
 
     
 }
