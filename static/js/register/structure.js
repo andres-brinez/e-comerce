@@ -9,8 +9,8 @@ function structure(){
                 <input id="nameUser" type="text" placeholder="Nombre">
                 <select name="selectRol" id="selectRol" required>
                     <option value="">Elige tu  rol</option>
-                    <option value="user">Usuario</option>
-                    <option value="administrador">Administrador</option>
+                    <option value="User">Usuario</option>
+                    <option value="Administrador">Administrador</option>
                 </select>
                 <input id="email" type="email" placeholder="Correo electrónico">
                 <input id="password" type="password" placeholder="Contraseña">
