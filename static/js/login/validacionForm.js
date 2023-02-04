@@ -35,18 +35,18 @@ function validacionWithLocalStorage(){
         informationAlert.text='Contraseña incorrecta'
     }
 
-    
 
+    
     else {
 
         localStorage.setItem(input_email.value, JSON.stringify(dataLocalStorage))
 
-        if (dataLocalStorage.rol=='user'){
+        if (dataLocalStorage.rol==='User'){
             window.location.replace("#Dashboard?False");
             
         }
 
-        else if (dataLocalStorage.rol=='administrador'){
+        else if (dataLocalStorage.rol==='Administrador'){
             window.location.replace("#Dashboard?True");
             
         }
