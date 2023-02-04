@@ -4,7 +4,7 @@
   display:none;
 }
 .article-type-product {
-  margin: 35px 5%;
+  margin: 100px 5%;
   font-family: "Raleway", sans-serif;
 
 }
@@ -17,8 +17,18 @@
 
 .name-product,
 .price-product,
-.title-type-product {
+.title-type-product,
+h1 {
   color: #464646;
+
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  
 
 }
 
