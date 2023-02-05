@@ -18,7 +18,6 @@ const lupaIcon=document.querySelector(".buscador-lupa")
 const buttonsend = document.querySelector('.input-button');
 const input_name = document.querySelector('.input-name');
 const input_mensaje = document.querySelector('#mensaje')
-
-// register and login data
+const sectionContact= document.querySelector('.section-contact')
 
 
