@@ -1,7 +1,0 @@
-function structureUsuario(){
-
-    
-
-}
-
-export {structureUsuario}
