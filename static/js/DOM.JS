@@ -20,4 +20,6 @@ const input_name = document.querySelector('.input-name');
 const input_mensaje = document.querySelector('#mensaje')
 const sectionContact= document.querySelector('.section-contact')
 
+const contenedorBuscar=document.querySelector('.contenedor-buscador')
+
 
