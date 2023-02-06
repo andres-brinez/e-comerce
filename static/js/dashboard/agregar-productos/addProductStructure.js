@@ -1,6 +1,6 @@
 // Solo en el caso de  los administradores saldrá esta opción
 
-function addProduct(){
+function addProductStructure(){
 
     const container = document.createElement('div');
     container.classList.add('container');
@@ -90,5 +90,5 @@ function addProduct(){
     main.appendChild(container);
 
 }
-export {addProduct}
+export {addProductStructure}
 
