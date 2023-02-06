@@ -1,14 +1,16 @@
 import { showProducts } from "./showProducts.js"
 import { strutureMain } from "./structureMain.js"
 import { getLocalStoreSesion } from "../utils/getSesionActive.js"
+import { deleteProduct } from "./crudProducts/delete/index.js"
 function dashboard() {
 
   const sesionActive = getLocalStoreSesion() // trae la  información de la sesion que está activa
 
   strutureMain(sesionActive)// crea la estructura principal
   showProducts()// muestra los productos en la estructura principal
-  // addProduct()
+
   salir() // evento para cerrar sesion 
+  deleteProduct()
 
 }
 
