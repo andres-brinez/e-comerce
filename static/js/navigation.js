@@ -2,6 +2,7 @@ import { data } from "../../Information/data.js";
 
 import { informacion_basic_producto } from "./product-card-basic/index.js";
 import { mostrarProducto } from "./InformationProducto/index.js";
+import { hero } from "./components/hero.js";
 
 import { register } from "./register/index.js";
 import { login } from "./login/index.js";
@@ -29,8 +30,10 @@ function navigation() {
     // home
     if (url.hash === '') {
         console.log('inicio')
+        hero()
+
         informacion_basic_producto(data)
-        sectionHero.style = 'block';
+        // sectionHero.style = 'block';
 
     }
 
