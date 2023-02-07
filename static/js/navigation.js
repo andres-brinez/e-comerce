@@ -1,14 +1,17 @@
 import { data } from "../../Information/data.js";
+
 import { informacion_basic_producto } from "./product-card-basic/index.js";
 import { mostrarProducto } from "./InformationProducto/index.js";
+
 import { register } from "./register/index.js";
 import { login } from "./login/index.js";
+
 import { dashboard } from "./dashboard/index.js";
-import { addProduct } from "./dashboard/agregar-productos/addProduct.js";
-import { validarArrastrarImagen } from "./dashboard/agregar-productos/validaciones/validar-arrastrar-imagen.js";
-import { inputFileValidate } from "./dashboard/agregar-productos/validaciones/validar-button-img.js";
-
-
+import { addProductStructure } from "./dashboard/agregar-productos/addProductStructure.js";
+import { validarArrastrarImagen } from "./dashboard/validaciones/validar-arrastrar-imagen.js";
+import { inputFileValidate } from "./dashboard/validaciones/validar-button-img.js";
+import { buttonSendValidate } from "./dashboard/validaciones/validaForm.js";
+import { structureForm } from "./dashboard/crudProducts/update/structure.js";
 //new URL es una funcion ya echa que nos trae la url
 const url = new URL(window.location);
 
@@ -100,23 +103,28 @@ function navigation() {
 
         sectionContact.style.display = 'none'
 
-        addProduct() //crea el formulario
+        addProductStructure() //crea el formulario
 
         // VALIDACIONES de las  imagenes y el formulario
         validarArrastrarImagen()
         inputFileValidate()
+        buttonSendValidate('producto Agregado ')
 
     }
 
-    // const sesionActive = localStorage.getItem('sesionActive')
-    // // console.log(sesionActive)
+    else if (url.hash.includes('edit')) {
+        console.log('editProduct')
+        structureForm() // crea el formulario
+
+        // VALIDACIONES de las  imagenes y el formulario
+        validarArrastrarImagen()
+        inputFileValidate()
+        buttonSendValidate('Producto Editado')
+    }
 
     // if (sesionActive==null){
     //   window.location.href = './login.html'
     // }
-
-
-
 
 
 }
