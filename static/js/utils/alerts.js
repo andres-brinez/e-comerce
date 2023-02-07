@@ -9,4 +9,17 @@ function mostrarAlert(information) {
     })
 }
 
-export {mostrarAlert}
+function alertNoLogeado(){
+    Swal.fire(
+        '¿Estás  logeado?',
+        'Inicia sesión para ingresar a esta función ',
+        'question'
+      )
+      .then(() => {
+        window.location.href = '#login'
+    })
+}
+
+
+
+export {mostrarAlert,alertNoLogeado}
