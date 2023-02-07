@@ -40,7 +40,6 @@ function createContainerAllProducts(titulo){
 
     // borra todo lo  que haya en el main 
     main.innerHTML=''
-
     main.appendChild(container)
  
 
