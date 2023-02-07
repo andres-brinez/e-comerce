@@ -91,7 +91,9 @@ img.icon_leter_two {
 
 /*  celulares */
 @media (max-width: 700px) {
- 
+  #button-registrarce{
+    display: none
+  }
  
   .contenedor-icon .icon-image {
     width: 28px;
