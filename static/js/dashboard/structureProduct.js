@@ -1,15 +1,14 @@
 function structureProduct(product,category){
-    console.log(category)
     const contenedor = document.createElement("div")   
     contenedor.classList.add("contenedor-producto")
 
     const contenido = `
             <div class="contenedor-image">
                 <div class="contenedor-eliminar"> 
-                    <a href="#delete?id=${product.id}&category=${category}"><img src="./static//img/section-products/icon-eliminar.svg" class="icon-eliminar"/></a>
+                    <img src="./static//img/section-products/icon-eliminar.svg" class="icon-eliminar"/>
                 </div>
                 <div class="contenedor-editar">             
-                <a target='_blank' href="#edit?id=${product.id}&category=${product.category}">
+                <a target='_blank' href="#edit?id=${product.id}&category=${category}">
                 <img src="./static/img/section-products/icon-editar.svg" class="icon-editar"/>
                 </a>
                     
