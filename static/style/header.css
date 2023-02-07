@@ -91,9 +91,7 @@ img.icon_leter_two {
 
 /*  celulares */
 @media (max-width: 700px) {
-  #button-registrarce{
-    display: none
-  }
+ 
  
   .contenedor-icon .icon-image {
     width: 28px;
@@ -138,10 +136,3 @@ img.icon_leter_two {
  
 }
 
-/* tablet */
-
-@media (min-width: 700px) and (max-width: 910px) {
-  #button-registrarce{
-    display: none
-  }
-}
