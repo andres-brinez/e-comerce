@@ -72,7 +72,7 @@ function navigation() {
 
     // se debe estár logeado para acceder  a la página
     else {
-
+        console.log(isLogeado)
         headerDashboard()
         
         // se hacen validaciones si esta logeado
@@ -129,8 +129,11 @@ function navigation() {
                     alert('no tienes acceso  ')
                     window.location.href = ''
                 }
-            
             }
         }
     }
+
+    
+
+
 }
