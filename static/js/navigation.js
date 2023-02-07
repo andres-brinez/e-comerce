@@ -47,12 +47,14 @@ function navigation() {
 
     else if (url.hash === '#allProducts') {
         console.log('allProducts')
+        document.title ="Todos los productos";
         headerBasic()
         informacion_basic_producto(data, 'all-products')
     }
 
     else if (url.hash.includes('productoID')) {
         console.log('producto')
+        document.title ="Producto";
         headerBasic()
         mostrarProducto(url, data)
 
@@ -60,12 +62,14 @@ function navigation() {
 
     else if (url.hash === '#register') {
         console.log('register')
+        document.title ="Registrarce"
         headerRegister()
         register()
     }
 
     else if (url.hash === '#login') {
         console.log('login')
+        document.title ="Iniciar sesión"
         headerLogin()
         login()
 
@@ -79,6 +83,8 @@ function navigation() {
         // se hacen validaciones si esta logeado
 
         if (url.hash.includes('Dashboard')) {
+            document.title='Dashboard'
+
             if(isLogeado==null){
                 alert('no puedes acceder a esta secion, logeate ')
                 window.location.href = ''
@@ -102,6 +108,7 @@ function navigation() {
            }
     
         else if (url.hash === '#addProduct') {
+            document.title='Agregar producto'
             if(isLogeado==null){
                 alert('no puedes acceder a esta secion, logeate ')
                 window.location.href = ''
@@ -114,6 +121,7 @@ function navigation() {
         }
     
         else if (url.hash.includes('edit')) {
+            document.title='Editar Producto'
             if(isLogeado==null){
                 alert('no puedes acceder a esta secion, logeate ')
                 window.location.href = ''
