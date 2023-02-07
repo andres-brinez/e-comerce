@@ -20,7 +20,7 @@ function structureProduct(product,category){
 
     <p class="name-product">${product.nombre}</p>
     <p class="price-product">${product.precio}</p>
-    <a href="./producto.html?id=${product.id}" class="see-product" target="_blank">Ver producto</a>
+    <a href="/#Category=${category}/productoID=${product.id}" class="see-product" target="_blank">Ver producto</a>
     `
     }
     else {
@@ -41,7 +41,7 @@ function structureProduct(product,category){
 
         <p class="name-product">${product.nombre}</p>
         <p class="price-product">${product.precio}</p>
-        <a href="./producto.html?id=${product.id}" class="see-product" target="_blank">Ver producto</a>
+        <a href="/#Category=${category}/productoID=${product.id}" class="see-product" target="_blank">Ver producto</a>
         `
 
     }
