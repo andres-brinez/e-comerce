@@ -1,10 +1,13 @@
-function structureForm(){
-    main.innerHTML=''
-    main.classList.add('main-agregar-producto')
+import { getProduct } from "../../../utils/getProduct.js"
+import { mostrar_imagen } from "../../validaciones/mostar-imagen.js"
+function structureForm() {
+  main.innerHTML = ''
+  const producto = getProduct()
+  main.classList.add('main-agregar-producto')
 
-    const contenedor= document.createElement('div')
-    contenedor.classList.add('container')
-    contenedor.innerHTML=`
+  const contenedor = document.createElement('div')
+  contenedor.classList.add('container')
+  contenedor.innerHTML = `
     <h2>Editar producto</h2>
         <div class="contenedor-imagen"></div>
         <div class="opcion-agregar-producto">
@@ -51,7 +54,7 @@ function structureForm(){
               type="text"
               id="input-name"
               class="input-name"
-              placeholder="Producto XYZ"
+              value="${producto.nombre}"
             />
           </div>
           <div class="contenedor-input-price-product">
@@ -60,15 +63,18 @@ function structureForm(){
               type="number"
               id="input-price"
               class="input-name"
-              placeholder="$ 60,00"
+              value="${parseFloat(producto.precio)}.00"
             />
+
           </div>
           <textarea
             class="descripcion-producto"
             cols="30"
             rows="4"
-            placeholder="Descripción del producto"
-          ></textarea>
+          >Descripción del producto
+          \nVoluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita
+          </textarea>
+
           <div class="categoria">
             <label for="categoria" class="categoria__label">Categoria</label>
             <select
@@ -90,9 +96,11 @@ function structureForm(){
         </form>
     `
 
-    main.appendChild(contenedor)
+  main.appendChild(contenedor)
+  mostrar_imagen(producto.imagen,'editar')
+
 }
 
-export {structureForm}
+export { structureForm }
 
 
