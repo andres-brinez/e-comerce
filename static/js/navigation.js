@@ -36,6 +36,7 @@ const isLogeado= getLocalStoreSesion()
 function navigation() {
     // home
     if (url.hash === '') {
+        document.title ="Inicio";
         console.log('inicio')
         headerBasic()
         hero()
