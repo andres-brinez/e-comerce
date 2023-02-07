@@ -2,7 +2,6 @@ const  main = document.querySelector('main');
 const sectionHero= document.querySelector('.section-hero');
 
 const containerHeader = document.querySelector('header');
-const sectionProducts= document.getElementsByClassName('section-products')[0]
 const buttonRegister= document.getElementById('button-registrarce')
 const buttonLogin = document.querySelector('.button-login')
 
