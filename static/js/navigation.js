@@ -7,11 +7,9 @@ import { register } from "./register/index.js";
 import { login } from "./login/index.js";
 
 import { dashboard } from "./dashboard/index.js";
-import { addProductStructure } from "./dashboard/agregar-productos/addProductStructure.js";
-import { validarArrastrarImagen } from "./dashboard/validaciones/validar-arrastrar-imagen.js";
-import { inputFileValidate } from "./dashboard/validaciones/validar-button-img.js";
-import { buttonSendValidate } from "./dashboard/validaciones/validaForm.js";
-import { structureForm } from "./dashboard/crudProducts/update/structure.js";
+import { addProduct } from "./dashboard/agregar-productos/index.js";
+import { editProduct } from "./dashboard/crudProducts/update/index.js";
+
 //new URL es una funcion ya echa que nos trae la url
 const url = new URL(window.location);
 
@@ -103,23 +101,26 @@ function navigation() {
 
         sectionContact.style.display = 'none'
 
-        addProductStructure() //crea el formulario
+        addProduct()
 
-        // VALIDACIONES de las  imagenes y el formulario
-        validarArrastrarImagen()
-        inputFileValidate()
-        buttonSendValidate('producto Agregado ')
+        
 
     }
 
     else if (url.hash.includes('edit')) {
         console.log('editProduct')
-        structureForm() // crea el formulario
 
-        // VALIDACIONES de las  imagenes y el formulario
-        validarArrastrarImagen()
-        inputFileValidate()
-        buttonSendValidate('Producto Editado')
+        contenedorBuscar.style.display = 'none'
+
+        buttonRegister.style.display = 'none'
+
+        buttonLogin.textContent = 'salir'
+        buttonLogin.className = 'buttonSalir'
+
+        sectionContact.style.display = 'none'
+        editProduct()
+
+        
     }
 
     // if (sesionActive==null){
