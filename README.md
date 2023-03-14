@@ -7,8 +7,8 @@ Cuarto Challenge | Formación Front-End | AluraGeek E-Commerce
 La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
 
 Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe contener los siguientes requisitos:
-- Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
-- Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
+— Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
+- Un banner que contenga descuentos, promociones o información relevante del momento.
 - Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
 - Una página de producto que contiene la imagen, el nombre, la descripción y el precio.
 - Un pie de página con un formulario de contacto y otras informaciónes relevantes.
