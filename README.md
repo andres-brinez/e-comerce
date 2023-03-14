@@ -1,5 +1,7 @@
 Cuarto Challenge | Formación Front-End | AluraGeek E-Commerce
 
+![WhatsApp Image 2023-03-13 at 21 23 41](https://user-images.githubusercontent.com/94869227/224877144-14944b77-67f1-414c-ba9f-b5440ad2f13a.jpg)
+
 **Requerimiento**
 
 La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de ventas, por lo que quieren implementar un e-commerce, llevar a la empresa al siguiente nivel y volverse más digital.
